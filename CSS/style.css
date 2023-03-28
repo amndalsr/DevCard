@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-  
+
 h1 {
     color: #5a226b;
     font-weight: 600;
@@ -24,40 +24,49 @@ p {
     color: #3b1b49;
     font-weight: 500;
 }
-  
+
 h3 {
     color: #5a226b;
     font-weight: 600;
     opacity: 0.8;
 }
-  
+
 main {
     font-family: "Poppins", sans-serif;
-    min-height: 100vh;
     background: linear-gradient(to right top, #abbceb, #e8adff);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5em;
 }
-  
+
 .container {
-    background: white;
-    min-height: 80vh;
-    width: 60%;
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.3)
-    );
+    width: 160vh;
     border-radius: 2rem;
     z-index: 2;
     backdrop-filter: blur(2rem);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    /*padding: 2em;*/
+    background: white;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3));
 }
- 
-.usuario img{
-    height: 10vh;
-    border-radius: 200%;
+
+.usuario .circle-image {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+}
+
+.usuario .circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .dashboard {
@@ -67,11 +76,11 @@ main {
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.3)
-    );
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3));
     border-radius: 2rem;
 }
 
@@ -86,33 +95,32 @@ main {
     padding: 0rem 2rem;
 }
 
-.link img{
-      height: 35px;
+.link img {
+    height: 35px;
 }
-  
-.card img{
-    height: 100px;
+
+.card img {
+    height: 60px;
 }
 
 .skills {
     flex: 2;
 }
-  
+
 .discord {
-    height: 20vh;
-    width: 34vh;
+    height: 15vh;
+    width: 32vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: linear-gradient(to right top, #abbceb, #e8adff);
     border-radius: 2rem;
     color: white;
-    padding: 2rem;
-    position: relative;
+    padding: 1.5rem;
 }
-  
+
 .discord img {
-    height: 70px;
-    position: absolute;
-    top: 20%;
-    right: 20%;
+    height: 50px;
 }
 
 .discord h2 {
@@ -121,44 +129,51 @@ main {
     color: white;
     font-weight: 600;
 }
-  
+
 .status {
-    margin-bottom: 3rem;
+    margin-bottom: 1em;
+    margin-left: 2em;
 }
-  
+
 .status input {
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.4)
-    );
+    background-color: #dfa8f4;
     border: none;
     width: 50%;
     padding: 0.5rem;
     border-radius: 2rem;
 }
-  
+
 .skills {
-    margin: 5rem;
+    margin: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
-  
+
+.cards {
+    height: 550px;
+    overflow-y: scroll;
+}
+
+.cards::-webkit-scrollbar {
+    width: 10px; 
+    height: 10px;
+    border-radius: 20px;
+    background-color: #dfa8f4; 
+  }
+
 .card {
     display: flex;
-    background: linear-gradient(
-      to left top,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.5)
-    );
+    background: linear-gradient(to left top,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.5));
     border-radius: 1rem;
-    margin: 2rem 0rem;
+    margin: 2em;
     padding: 2rem;
     box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
     justify-content: space-between;
 }
-  
+
 .progress {
     background: linear-gradient(to right top, #e0abeb, #bf77db);
     width: 100%;
@@ -167,6 +182,7 @@ main {
     position: relative;
     overflow: hidden;
 }
+
 .progress::after {
     content: "";
     width: 100%;
@@ -175,12 +191,13 @@ main {
     position: absolute;
     left: 60%;
 }
+
 .card-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-  
+
 .percentage {
     font-weight: bold;
     background: linear-gradient(to right top, #9168a8, #d26cfa);

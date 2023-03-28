@@ -1,94 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Card</title>
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Card</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/reset/reset.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
+
 <body>
 
-    <main>
+  <main>
 
-        <section class="container">
+    <section class="container">
 
-          <div class="dashboard">
+      <div class="dashboard">
 
-            <div class="usuario">
-              <img src="/images/avatar.jpg" alt="perfil" />
-              <h3>Amanda Laís</h3>
-              <p>Pro Member</p>
-            </div>
+        <div class="usuario">
+          <span class="circle-image">
+            <img src="/images/avatar.jpg" />
+          </span>
+          <h3>Amanda Laís</h3>
+          <p>Developer</p>
+        </div>
 
-            <div class="links">
-              <div class="link">
-                <img src="/images/git.png" alt="github" />
-                <h2>GitHub</h2>
-              </div>
-              <div class="link">
-                <img src="/images/linke.png" alt="linkedin" />
-                <h2>Linkedin</h2>
-              </div>
-              <div class="link">
-                <img src="/images/insta.png" alt="instagram" />
-                <h2>Instagram</h2>
-              </div>
-              
-            </div>
-
-            <div class="discord">
-              <h2>Join the discord community.</h2>
-              <img src="/images/discord.png" alt="discord" />
-            </div>
+        <div class="links">
+          <div class="link">
+            <a href="https://github.com/amndalsr"><img src="/images/git.png" alt="github" /></a>
+            <a href="https://github.com/amndalsr" style="text-decoration:none"><h2>GitHub</h2></a>
+          </div>
+          <div class="link">
+            <a href="https://www.linkedin.com/feed/"><img src="/images/linke.png" alt="linkedin" /></a>
+            <a href="https://www.linkedin.com/feed/" style="text-decoration:none"><h2>Linkedin</h2></a>
+          </div>
+          <div class="link">
+            <a href="https://www.instagram.com/amnda.lsr/" style="text-decoration:none"><img src="/images/insta.png" alt="instagram" /></a>
+            <a href="https://www.instagram.com/amnda.lsr/" style="text-decoration:none"><h2>Instagram</h2></a>
           </div>
 
-          <div class="skills">
-            <div class="status">
-              <h1>Dev Card</h1>
-              <input type="text" />
+        </div>
+
+        <div class="discord">
+          <h2>Join the discord community.</h2>
+          <img src="/images/discord.png" alt="discord" />
+        </div>
+      </div>
+
+      <div class="skills">
+
+        <div class="status">
+          <h1>Dev Card</h1>
+        </div>
+        <div class="status">
+          <input type="text" disabled="" />
+        </div>
+
+        <div class="cards">
+
+          <div class="card">
+            <img src="/images/js.png" alt="JavaScript" />
+            <div class="card-info">
+              <h2>JavaScript</h2>
+              <p>In progress</p>
+              <div class="progress"></div>
             </div>
-
-            <div class="cards">
-
-              <div class="card">
-                <img src="/images/js.png" alt="JavaScript" />
-                <div class="card-info">
-                  <h2>JavaScript</h2>
-                  <p>In progress</p>
-                  <div class="progress"></div>
-                </div>
-                <h2 class="percentage">50%</h2>
-              </div>
-              
-              <div class="card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png" alt="Dart" />
-                <div class="card-info">
-                  <h2>Dart</h2>
-                  <p>In progress</p>
-                  <div class="progress"></div>
-                </div>
-                <h2 class="percentage">50%</h2>
-              </div>
-
-              <div class="card">
-                <img src="/images/ht.png" alt="html" />
-                <div class="card-info">
-                  <h2>HTML</h2>
-                  <p>In progress</p>
-                  <div class="progress"></div>
-                </div>
-                <h2 class="percentage">50%</h2>
-              </div>
-
-            </div>
-
+            <h2 class="percentage">50%</h2>
           </div>
 
-        </section>
+          <div class="card">
+            <img src="https://logospng.org/download/java/logo-java-512.png" alt="Dart" />
+            <div class="card-info">
+              <h2>Java</h2>
+              <p>In progress</p>
+              <div class="progress"></div>
+            </div>
+            <h2 class="percentage">90%</h2>
+          </div>
 
-      </main>
-    
+          <div class="card">
+            <img src="https://img.icons8.com/fluency/512/flutter.png" alt="html" />
+            <div class="card-info">
+              <h2>Flutter</h2>
+              <p>In progress</p>
+              <div class="progress"></div>
+            </div>
+            <h2 class="percentage">70%</h2>
+          </div>
+
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png" alt="Dart" />
+            <div class="card-info">
+              <h2>Dart</h2>
+              <p>In progress</p>
+              <div class="progress"></div>
+            </div>
+            <h2 class="percentage">50%</h2>
+          </div>
+
+          <div class="card">
+            <img src="/images/ht.png" alt="html" />
+            <div class="card-info">
+              <h2>HTML</h2>
+              <p>In progress</p>
+              <div class="progress"></div>
+            </div>
+            <h2 class="percentage">70%</h2>
+          </div>
+
+          <div class="card">
+            <img src="https://logospng.org/download/css-3/logo-css-3-2048.png" alt="Dart" />
+            <div class="card-info">
+              <h2>CSS</h2>
+              <p>In progress</p>
+              <div class="progress"></div>
+            </div>
+            <h2 class="percentage">70%</h2>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
 </body>
+
 </html>
